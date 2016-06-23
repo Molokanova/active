@@ -145,6 +145,8 @@
     <!-- Answer Select -->
     <script>
       $('.vote').on('click', function(e) {
+        $('.list-group button').removeClass('list-group-item-success');
+        $('.list-group .glyphicon').hide();
         $(this).addClass('list-group-item-success');
         $(this).children('.glyphicon').show();
         e.preventDefault();
