@@ -81,11 +81,11 @@
               <p>На площадках фестиваля «Московское варенье» планируется обширная культурная и развлекательная программа, в том числе проведение мастер-классов, выставок, концертов.</p>
               <p><strong>Как вы считаете, какие еще мероприятия нужно включить в программу фестиваля?</strong></p>
               <div class="list-group">
-                <button type="button" class="list-group-item">Cras justo odio</button>
-                <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
-                <button type="button" class="list-group-item">Morbi leo risus<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span></button>
-                <button type="button" class="list-group-item">Porta ac consectetur ac</button>
-                <button type="button" class="list-group-item">Vestibulum at eros</button>
+                <button type="button" class="vote list-group-item">Cras justo odio<span class="glyphicon glyphicon-ok form-control-feedback" style="display:none;" aria-hidden="true"></span></button>
+                <button type="button" class="vote list-group-item">Dapibus ac facilisis in<span class="glyphicon glyphicon-ok form-control-feedback" style="display:none;" aria-hidden="true"></span></button>
+                <button type="button" class="vote list-group-item">Morbi leo risus<span class="glyphicon glyphicon-ok form-control-feedback" style="display:none;" aria-hidden="true"></span></button>
+                <button type="button" class="vote list-group-item">Porta ac consectetur ac<span class="glyphicon glyphicon-ok form-control-feedback" style="display:none;" aria-hidden="true"></span></button>
+                <button type="button" class="vote list-group-item">Vestibulum at eros<span class="glyphicon glyphicon-ok form-control-feedback" style="display:none;" aria-hidden="true"></span></button>
               </div>
             </div>
           </div>
@@ -104,14 +104,15 @@
         <p>&copy; 2015 Company, Inc.</p>
       </footer>
 
-      <!-- Modal -->
+      <!-- Thanks Modal -->
       <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-body">
               <h2 class="text-center">Спасибо, ваш голос учтен!</h2>
+              <hr>
               <p class="lead text-center">Проголосуйте и за остальные вопросы на странце с вопросами</p>
-              <a role="button" class="btn btn-default center-block" href="questions.html" >Перейти к другим вопросам</a>
+              <a role="button" class="btn btn-link center-block" href="questions.html" >Перейти к другим вопросам &#8594;</a>
             </div>
           </div>
         </div>
@@ -130,5 +131,14 @@
     <script src="js/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Answer Select -->
+    <script>
+      $('.vote').on('click', function(e) {
+        $(this).addClass('list-group-item-success');
+        $(this).children('.glyphicon').show();
+        e.preventDefault();
+      });
+    </script>
+
   </body>
 </html>

@@ -1,8 +1,8 @@
 {
- "name": "Active Citizen",
- "version": "1.0.0",
- "description": "The Active Citizen App on Heroku",
- "dependencies": {
-   "harp": "*"
- }
+  "name": "Active Citizen",
+  "version": "1.0.0",
+  "description": "The Active Citizen App on Heroku",
+  "dependencies": {
+    "harp": "*"
+  }
 }
